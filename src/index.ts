@@ -17,7 +17,7 @@ const upload = multer({ storage });
 
 
 app.get("/",(req, res) => {
-    res.send("Welcome to the Google")
+    res.send("Welcome to the MuseBox Backend")
 })
 
 
