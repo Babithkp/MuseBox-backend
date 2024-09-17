@@ -15,7 +15,7 @@ app.use(express_1.default.urlencoded({ extended: true }));
 const storage = multer_1.default.memoryStorage();
 const upload = (0, multer_1.default)({ storage });
 app.get("/", (req, res) => {
-    res.send("Welcome to the Google");
+    res.send("Welcome to the MuseBox Backend");
 });
 app.post("/api/v1/uploadSong", upload.any(), songFileController_1.songUploadToS3);
 app.post("/api/v1/uploadThumbnail", upload.any(), songFileController_1.thumbnailUploadToS3);
